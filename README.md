@@ -52,7 +52,7 @@ The **Sneakerheads** MVP wants to deliver a functional app that displys it's pro
 
 #### Wireframes
 
-![https://www.figma.com/file/4H4dQICJw6eFzz9fPqQ19T/Sneakerheads?node-id=0%3A1](url)
+(https://www.figma.com/file/4H4dQICJw6eFzz9fPqQ19T/Sneakerheads?node-id=0%3A1)
 
 #### Component Tree
 
