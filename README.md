@@ -19,13 +19,13 @@
 
 ## Overview
 
-_**Sneakerheads** is a community based marketplace app where users can post their sneakers for sale as well as comment and like other posts from their fellow peers to show support. 
+**Sneakerheads** is a community based marketplace app where users can post their sneakers for sale as well as comment and like other posts from their fellow peers to show support. 
 
 <br>
 
 ## MVP
 
-_The **Sneakerheads** MVP wants to deliver a functional app that displys it's product page with intended CSS, authentication with ability to sign up and/or sign in, and a product details page that has includes the likes and comment section.
+The **Sneakerheads** MVP wants to deliver a functional app that displys it's product page with intended CSS, authentication with ability to sign up and/or sign in, and a product details page that has includes the likes and comment section.
 <br>
 
 ### Goals
@@ -52,7 +52,7 @@ _The **Sneakerheads** MVP wants to deliver a functional app that displys it's pr
 
 #### Wireframes
 
-![https://www.figma.com/file/4H4dQICJw6eFzz9fPqQ19T/Sneakerheads?node-id=0%3A1](url)
+![https://www.figma.com/file/84hGy2QoxkOE68bAMjvG01/Component-Tree?node-id=0%3A1](url)
 
 - Mobile Resource Index
 
