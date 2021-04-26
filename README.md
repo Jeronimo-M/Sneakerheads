@@ -52,15 +52,13 @@ The **Sneakerheads** MVP wants to deliver a functional app that displys it's pro
 
 #### Wireframes
 
-![https://www.figma.com/file/84hGy2QoxkOE68bAMjvG01/Component-Tree?node-id=0%3A1](url)
-
-- Mobile Resource Index
+![https://www.figma.com/file/4H4dQICJw6eFzz9fPqQ19T/Sneakerheads?node-id=0%3A1](url)
 
 #### Component Tree
 
 > Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
-[Component Tree Sample](https://www.figma.com/file/84hGy2QoxkOE68bAMjvG01/Component-Tree?node-id=0%3A1)
+[Component Tree](https://www.figma.com/file/84hGy2QoxkOE68bAMjvG01/Component-Tree?node-id=0%3A1)
 
 #### Component Architecture
 
