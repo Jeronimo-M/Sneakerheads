@@ -109,14 +109,17 @@ src
 
 #### ERD Model
 
-[ERD Sample]https://drive.google.com/drive/u/0/my-drive)
+(https://app.diagrams.net/#G1-Bjg2vA7OrKhrX92-TanI86V76LU4LU8)
 <br>
 
 ***
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Add ability to add sub-comments
+- Add Like feature to all comments
+- Add a responsive search bar
+- Implement an in-app chat
 
 ***
 
