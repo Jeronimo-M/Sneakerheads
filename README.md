@@ -107,7 +107,7 @@ src
 
 #### ERD Model
 
-(https://app.diagrams.net/#G1-Bjg2vA7OrKhrX92-TanI86V76LU4LU8)
+(https://drive.google.com/file/d/1-Bjg2vA7OrKhrX92-TanI86V76LU4LU8/view?usp=sharing)
 <br>
 
 ***
