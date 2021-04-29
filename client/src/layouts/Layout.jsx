@@ -10,7 +10,7 @@ export default function Layout(props) {
         {
           currentUser ?
             <>
-              <p>{currentUser.username}</p>
+              <p>Welcome, {currentUser.username}!</p>
               <button onClick={handleLogout}>Logout</button>
             </>
             :
@@ -20,7 +20,7 @@ export default function Layout(props) {
         {
           currentUser &&
           <>
-            <Link to='/posts'>Foods</Link>
+            <Link to='/posts'>Kicks</Link>
             
           </>
         }

@@ -18,7 +18,7 @@ User.destroy_all
 
 puts "#{User.count} users created"
 
-@jordan = Post.create!(user: @jerry, title: 'Banned 1', content: 'Jordan 1 banned', photo_url: 'https://image.goat.com/crop/500/attachments/product_template_additional_pictures/images/045/223/287/original/693245_01.jpg.jpeg?1605033875', price: '300', contact_info: 'jordan@jordan.com'
+@jordan = Post.create!(user: @jerry, title: 'Banned 1', content: 'Jordan 1 banned', photo_url: 'https://i.imgur.com/vwXfDsz.jpg', price: '300', contact_info: 'jordan@jordan.com'
 )
 @yeezy = Post.create!(user: @david, title: 'Yeezy', content: 'Yeezy 350 V2 Bred', photo_url: 'https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/008/492/440/original/94407_01.jpg.jpeg?1513117674', price: '500', contact_info: 'yeezy@yeezy.com'
 )
