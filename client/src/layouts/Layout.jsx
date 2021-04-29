@@ -8,7 +8,7 @@ export default function Layout(props) {
       <header>
         <h1>Sneakerheads</h1>
         
-            <Link to='/login'>Login/Register</Link>
+        <Link to='/login'>Login/Register</Link>
         
       </header>
       {props.children}
