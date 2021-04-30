@@ -31,10 +31,10 @@ export default function PostDetail(props) {
                     <div className="name">{post.title}</div>
                     <div className="price">{`$${post.price}`}</div>
                     <div className="details">{post.content}</div>
-                    <div className="button-container">
+                    {/* <div className="button-container">
                         <button className="edit-button"><Link className="edit-link" to={`/posts/${post.id}/edit`}>Edit</Link></button>
                         <button className="delete-button" onClick={() => deleteProduct(post.id)}>Delete</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         
