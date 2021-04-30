@@ -10,7 +10,7 @@ export default function Posts(props) {
         <React.Fragment key={post.id}>
           <Link to={`/posts/${post.id}`}><img className="post-image" src={post.photo_url} alt={post.title} /></Link>
           {
-            currentUser?.id === post.user_id &&
+            // currentUser?.id === post.user_id &&
             <>
               {/* <Link to={`/posts/${post.id}/edit`}><button>edit</button></Link>
               <button onClick={() => handleDelete(post.id)}>delete</button> */}

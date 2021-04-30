@@ -18,15 +18,27 @@ User.destroy_all
 
 puts "#{User.count} users created"
 
-@jordan = Post.create!(user: @jerry, title: 'Banned 1', content: 'Jordan 1 banned', photo_url: 'https://i.imgur.com/vwXfDsz.jpg', price: '300', contact_info: 'jordan@jordan.com'
+@jordan1 = Post.create!(user: @jerry, title: 'Banned 1', content: 'Jordan 1 banned', photo_url: 'https://i.imgur.com/vwXfDszm.jpg', price: '300', contact_info: 'jordan1@jordan1.com'
 )
-@yeezy = Post.create!(user: @david, title: 'Yeezy', content: 'Yeezy 350 V2 Bred', photo_url: 'https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/008/492/440/original/94407_01.jpg.jpeg?1513117674', price: '500', contact_info: 'yeezy@yeezy.com'
+@adiddasyeezy = Post.create!(user: @david, title: 'Adiddas Yeezy', content: 'Yeezy 350 V2 Bred', photo_url: 'https://i.imgur.com/wIlpEQNm.jpg', price: '500', contact_info: 'yeezy@yeezy.com'
 )
-@airmax = Post.create!(user: @stefon, title: 'Air Max', content: 'Air Max 90', photo_url: 'https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/050/450/525/original/723428_01.jpg.jpeg?1613585015', price: '250', contact_info: 'airmax@airmax.com'
+@airmax = Post.create!(user: @stefon, title: 'Air Max', content: 'Air Max 90', photo_url: 'https://i.imgur.com/dgkCRg6m.jpg', price: '250', contact_info: 'airmax@airmax.com'
+)
+@airmag = Post.create!(user: @jerry, title: 'Air Mag', content: 'Air Mag ', photo_url: 'https://i.imgur.com/KcSCjy5m.jpg', price: '50000', contact_info: 'airmag@airmag.com'
+)
+@nikeyeezy = Post.create!(user: @jerry, title: 'Nike Yeezy', content: 'Nike Yeezy', photo_url: 'https://i.imgur.com/qVfqSksm.jpg', price: '5000', contact_info: 'nikeyeezy@nikeyeezy.com'
+)
+@balenciaga = Post.create!(user: @ashley, title: 'Balenciaga', content: 'Balenciaga', photo_url: 'https://i.imgur.com/LgnUlY0m.jpg', price: '2000', contact_info: 'balenciaga@balenciaga.com'
+)
+@jordan4 = Post.create!(user: @anna, title: 'Jordan 4', content: 'University Blue Jordan 4', photo_url: 'https://i.imgur.com/0SCT3GDm.jpg', price: '750', contact_info: 'jordan4@jordan4.com'
+)
+@jordan6 = Post.create!(user: @david, title: 'Travis Scott x Jordan 6', content: 'Jordan 6', photo_url: 'https://i.imgur.com/IhfLF7lm.jpg', price: '800', contact_info: 'jordan6@jordan6.com'
+)
+@jordan3 = Post.create!(user: @stefon, title: 'Jordan 3 Black Cement', content: 'Jordan 3', photo_url: 'https://i.imgur.com/6nBK4sUm.jpg', price: '350', contact_info: 'jordan3@jordan3.com'
 )
 puts "#{Post.count} posts created"
 
-Comment.create!(user: @jerry, post: @jordan, content: 'These are fire!')
+Comment.create!(user: @jerry, post: @jordan1, content: 'These are fire!')
 
 puts "#{Comment.count} comments created"
 

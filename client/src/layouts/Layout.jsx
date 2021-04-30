@@ -3,33 +3,13 @@ import React from 'react';
 import Nav from '../shared/Nav';
 
 export default function Layout(props) {
-  // const { currentUser, handleLogout } = props;
+  const { currentUser } = props;
   return (
     <div>
-      <Nav>
-        
+      <Nav currentUser={currentUser}>
+
       </Nav>
-      {/* <header>
-        <h1>Sneakerheads</h1>
-        {
-          currentUser ?
-            <>
-              <p>Welcome, {currentUser.username}!</p>
-              <button onClick={handleLogout}>Logout</button>
-            </>
-            :
-            <Link to='/login'>Login</Link>
-        }
-        {
-          currentUser &&
-          <>
-            <Link to='/posts'>Kicks</Link>
-            
-          </>
-        }
-        
-        <hr />
-      </header> */}
+      
       
       {props.children}
     </div>
