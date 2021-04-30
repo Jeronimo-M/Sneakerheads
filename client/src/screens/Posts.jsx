@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Posts(props) {
-  const { posts, handleDelete, currentUser } = props;
+  const { posts, currentUser } = props;
   return (
     <div>
       <h3>Posts</h3>
