@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { getAllPosts } from '../services/posts'
+import { getAllPosts, putPost } from '../services/posts'
 import Posts from '../screens/Posts';
 import PostDetails from '../screens/PostDetails';
 
