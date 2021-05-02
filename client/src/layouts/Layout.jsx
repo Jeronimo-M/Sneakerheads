@@ -1,11 +1,13 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import Nav from '../shared/Nav';
+import "./Layout.css"
+
+import Nav from '../shared/Nav/Nav';
 
 export default function Layout(props) {
   const { currentUser } = props;
   return (
     <div>
+      
       <Nav currentUser={currentUser}>
 
       </Nav>

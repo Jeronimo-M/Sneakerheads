@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
-import { getAllPosts, postPost, putPost } from '../services/posts'
-import Posts from '../screens/Posts';
-import PostDetails from '../screens/PostDetails';
-import PostCreate from '../screens/PostCreate';
-import PostEdit from '../screens/PostEdit';
-import Profile from '../screens/Profile';
+import { getAllPosts, postPost, putPost, deletePost } from '../services/posts'
+import Posts from '../screens/Posts/Posts';
+import PostDetails from '../screens/PostDetails/PostDetails';
+import PostCreate from '../screens/PostCreate/PostCreate';
+import PostEdit from '../screens/PostEdit/PostEdit';
+import Profile from '../screens/Profile/Profile';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([]);
@@ -34,6 +34,10 @@ export default function MainContainer(props) {
     history.push('/posts')
   }
 
+  const handleDelete = async (id) => {
+    await deletePost(id);
+    setPosts(prevState => prevState.filter(post => post.id !== id))
+  }
 
   return (
     <Switch>
@@ -62,8 +66,9 @@ export default function MainContainer(props) {
       </Route>
       <Route path='/profile'>
         <Profile
+          posts={posts}
           currentUser = {currentUser}
-
+          handleDelete = {handleDelete}
         />
       </Route>
       

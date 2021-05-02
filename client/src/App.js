@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom'
 // components
 import Layout from './layouts/Layout';
-import Login from './screens/Login';
-import Register from './screens/Register';
+import Login from './screens/Login/Login';
+import Register from './screens/Register/Register';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
 import MainContainer from './containers/MainContainer';
 

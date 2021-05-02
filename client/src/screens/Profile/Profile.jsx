@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { getUserPosts, deletePost } from '../services/posts'
+import { getUserPosts, deletePost } from '../../services/posts'
 import { Link } from 'react-router-dom'
 
 export default function Profile(props) {

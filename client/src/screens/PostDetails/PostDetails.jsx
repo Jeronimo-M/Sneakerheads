@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { postLike } from '../services/like';
+import { postLike } from '../../services/like';
 
 
 
-import { getOnePost } from '../services/posts';
+import { getOnePost } from '../../services/posts';
 
 export default function PostDetail() {
   const [post, setPost] = useState(null)
