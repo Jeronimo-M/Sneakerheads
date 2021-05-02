@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
+
+
 
 export default function PostEdit(props) {
   const [formData, setFormData] = useState({
@@ -9,15 +11,21 @@ export default function PostEdit(props) {
     price: '',
     contact_info: '',
   })
-  const { name } = formData;
+  const { title, content, photo_url, price, contact_info } = formData;
   const { posts, handleEdit } = props;
   const { id } = useParams();
+  
 
   useEffect(()=> {
     const prefillFormData = () => {
-      const postItem = posts.find(post => post.id === Number(id) )
+      const postItem = posts.find(post => post.id === Number(id))
+      console.log(postItem)
       setFormData({
-        name: postItem.name
+        title: postItem.title,
+        price: postItem.price,
+        content: postItem.content,
+        contact_info: postItem.contact_info,
+        photo_url: postItem.photo_url
       })
     }
     if (posts.length) {
@@ -33,6 +41,8 @@ export default function PostEdit(props) {
     }))
   }
 
+  
+
   return (
     <form onSubmit={(e)=>{
       e.preventDefault();
@@ -42,12 +52,45 @@ export default function PostEdit(props) {
       <label>Title:
         <input
           type='text'
-          name='name'
-          value={name}
+          name='title'
+          value={title}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Content:
+        <input
+          type='text'
+          name='content'
+          value={content}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Photo URL:
+        <input
+          type='text'
+          name='photo_url'
+          value={photo_url}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Price:
+        <input
+          type='text'
+          name='price'
+          value={price}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Contact Info:
+        <input
+          type='text'
+          name='contact_info'
+          value={contact_info}
           onChange={handleChange}
         />
       </label>
       <button>Submit</button>
+      
     </form>
   )
 }

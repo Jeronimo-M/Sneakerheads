@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :authorize_request, only: [:create, :update, :destroy, :user_index]
-  before_action :set_post, only: :show
-  before_action :set_user_post, only: [:update, :destroy]
+  
+  before_action :set_post, only: [:update, :destroy, :show]
 
   # GET /posts
   def index
@@ -12,7 +12,14 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
-    render json: @post
+    # @likes = Like.where(post_id: @post.id)
+    # @likeCount = @likes.count
+    # @post.likes.count
+    # render json: @post, include: @post.likes.count
+    render status:200, json: {
+      post: @post, 
+      likes: @post.likes.count
+    }
   end
 
   # POST /posts
