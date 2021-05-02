@@ -9,7 +9,7 @@ export default function PostCreate(props) {
     price: '',
     contact_info: '',
   })
-  const { name } = formData;
+  const { title, content, photo_url, price, contact_info } = formData;
   const { handleCreate } = props;
 
   const handleChange = (e) => {
@@ -30,7 +30,7 @@ export default function PostCreate(props) {
         <input
           type='text'
           name='title'
-          value={name.title}
+          value={title}
           onChange={handleChange}
         />
       </label>
@@ -38,7 +38,31 @@ export default function PostCreate(props) {
         <input
           type='text'
           name='content'
-          value={name}
+          value={content}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Photo URL:
+        <input
+          type='text'
+          name='photo_url'
+          value={photo_url}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Price:
+        <input
+          type='text'
+          name='price'
+          value={price}
+          onChange={handleChange}
+        />
+      </label>
+      <label>Contact Info:
+        <input
+          type='text'
+          name='contact_info'
+          value={contact_info}
           onChange={handleChange}
         />
       </label>

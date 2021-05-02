@@ -24,17 +24,14 @@ export default function PostDetail(props) {
 
     return (
       <div className="post-detail">
-          <h1>post detail screen</h1>
-                user={props.user}
+          
+                
                 <img className="post-detail-image" src={post.photo_url} alt={post.title} />
                 <div className="detail">
                     <div className="name">{post.title}</div>
                     <div className="price">{`$${post.price}`}</div>
                     <div className="details">{post.content}</div>
-                    {/* <div className="button-container">
-                        <button className="edit-button"><Link className="edit-link" to={`/posts/${post.id}/edit`}>Edit</Link></button>
-                        <button className="delete-button" onClick={() => deleteProduct(post.id)}>Delete</button>
-                    </div> */}
+                    
                 </div>
             </div>
         

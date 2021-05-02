@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy, :user_index]
   before_action :set_post, only: :show
   before_action :set_user_post, only: [:update, :destroy]
 
@@ -40,6 +40,13 @@ class PostsController < ApplicationController
     @post.destroy
   end
 
+  # New User Index Route
+  def user_index
+    
+    render json: @current_user.posts
+  end
+    
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post

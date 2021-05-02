@@ -60,7 +60,7 @@ function App() {
         </Route>  
         <Route path='/'>
             <MainContainer
-              // currentUser={currentUser}
+              currentUser={currentUser}
             />
           </Route> 
         </Switch>
