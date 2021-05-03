@@ -6,6 +6,7 @@ import PostDetails from '../screens/PostDetails/PostDetails';
 import PostCreate from '../screens/PostCreate/PostCreate';
 import PostEdit from '../screens/PostEdit/PostEdit';
 import Profile from '../screens/Profile/Profile';
+import Home from '../screens/Home/Home';
 
 export default function MainContainer(props) {
   const [posts, setPosts] = useState([]);
@@ -71,7 +72,11 @@ export default function MainContainer(props) {
           handleDelete = {handleDelete}
         />
       </Route>
-      
+      <Route path='/'>
+        <Home
+          
+        />
+      </Route>
     </Switch>
   )
 }

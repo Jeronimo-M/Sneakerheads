@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import "./Nav.css"
 
 
 export default function Nav(props) {
@@ -7,7 +8,7 @@ export default function Nav(props) {
   const authenticatedOptions = (
     <>
       <NavLink className="link" to="/profile">Profile</NavLink>
-      <NavLink className="link" to="/sign-out">Sign Out</NavLink>
+      {/* <NavLink className="link" to="/sign-out">Sign Out</NavLink> */}
     </>
   )
 
