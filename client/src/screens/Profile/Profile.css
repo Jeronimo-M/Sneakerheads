@@ -1,3 +1,20 @@
 .profile {
-  margin-top: 25px;
+  margin-top: 45px;
+}
+
+.edit-button {
+  margin-right: 50px;
+  }
+
+.edit-button, .delete-button {
+  border-radius: 20px;
+  align-items: center;
+  background: linear-gradient(45deg, #fead06, #c00def);
+  height: 30px;
+}
+
+.create-button {
+  background: linear-gradient(45deg, #fead06, #c00def);
+  align-items: center;
+  height: 30px;
 }

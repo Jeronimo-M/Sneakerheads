@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./Login.css"
 
 
 export default function Login(props) {
@@ -18,7 +19,7 @@ export default function Login(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <form className="login-form" onSubmit={(e) => {
       e.preventDefault();
       handleLogin(formData)
     }}>

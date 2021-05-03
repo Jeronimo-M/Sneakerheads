@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { signOut } from '../../services/auth'
+import { signOut } from '../../src/services/auth'
 import { useHistory } from "react-router-dom"
 
 const SignOut = (props) => {

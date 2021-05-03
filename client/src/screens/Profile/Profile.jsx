@@ -26,6 +26,12 @@ export default function Profile(props) {
 
   return (
     <div className="profile">
+      <div>
+        <Link to="/posts/new">
+          <button className="create-button">Post New Sneaker</button>
+        </Link>
+
+      </div>
       {userPosts.map(post => (
         <React.Fragment key={post.id} >
           <div className="post-card"><img className="post-image" src={post.photo_url} alt={post.title} /></div>
@@ -37,12 +43,6 @@ export default function Profile(props) {
           <button className="delete-button" onClick={handleDelete}>Delete</button>
         </React.Fragment>
       ))}
-      <div>
-        <Link to="/posts/new">
-          <button>Create</button>
-        </Link>
-
-      </div>
     </div>
   )
 }
