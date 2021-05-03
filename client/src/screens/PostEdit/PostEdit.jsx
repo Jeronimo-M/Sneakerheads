@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams} from 'react-router-dom';
-
+import "./PostEdit.css"
 
 
 export default function PostEdit(props) {
@@ -44,13 +44,14 @@ export default function PostEdit(props) {
   
 
   return (
-    <form onSubmit={(e)=>{
+    <form className="edit-form" onSubmit={(e)=>{
       e.preventDefault();
       handleEdit(id, formData);
     }}>
       <h3>Edit Post</h3>
       <label>Title:
         <input
+          className="title" 
           type='text'
           name='title'
           value={title}
@@ -59,6 +60,7 @@ export default function PostEdit(props) {
       </label>
       <label>Content:
         <input
+          className="content" 
           type='text'
           name='content'
           value={content}
@@ -67,6 +69,7 @@ export default function PostEdit(props) {
       </label>
       <label>Photo URL:
         <input
+          className="photo_url" 
           type='text'
           name='photo_url'
           value={photo_url}
@@ -75,6 +78,7 @@ export default function PostEdit(props) {
       </label>
       <label>Price:
         <input
+          className="price" 
           type='text'
           name='price'
           value={price}
@@ -83,13 +87,15 @@ export default function PostEdit(props) {
       </label>
       <label>Contact Info:
         <input
+          className="contact_info" 
           type='text'
           name='contact_info'
           value={contact_info}
           onChange={handleChange}
         />
       </label>
-      <button>Submit</button>
+      
+      <button className="submit-button">Submit</button>
       
     </form>
   )

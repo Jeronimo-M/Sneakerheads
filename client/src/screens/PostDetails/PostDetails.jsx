@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { postLike } from '../../services/like';
+import "./PostDetails.css"
 
 
 
@@ -46,9 +47,9 @@ export default function PostDetail() {
                     <div className="name">{post?.title}</div>
                     <div className="price">{`$${post?.price}`}</div>
                     <div className="details">{post?.content}</div>
-                    
-        </div>
-        <span>{`❤️${likes}`}<button onClick={handleLike}>Like</button></span>
+                    <div className="contact-info">{post?.contact_info}</div>
+                <span>{`❤️${likes}`}<button onClick={handleLike} className="like-button">Like</button></span>
+                </div>
        
             </div>
         
