@@ -40,7 +40,7 @@ export default function Profile(props) {
             to={`/posts/${post.id}/edit`}>
             <button className="edit-button">Edit</button>
           </Link>
-          <button className="delete-button" onClick={handleDelete}>Delete</button>
+          <button className="delete-button" onClick={()=>handleDelete(post.id)}>Delete</button>
         </React.Fragment>
       ))}
     </div>

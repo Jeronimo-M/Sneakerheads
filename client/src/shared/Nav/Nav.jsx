@@ -1,14 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import "./Nav.css"
-import SignOut from '../../screens/SignOut'
+
 
 
 export default function Nav(props) {
-  const {currentUser} = props
+  const {currentUser, handleLogout} = props
   const authenticatedOptions = (
     <>
       <NavLink className="link" to="/profile">Profile</NavLink>
+      <a onClick={(e) => {
+        e.preventDefault()
+        handleLogout()
+      }}>Sign Out</a>
       {/* <NavLink className="link" to="/sign-out">Sign Out</NavLink> */}
     </>
   )
@@ -35,7 +39,7 @@ export default function Nav(props) {
           {alwaysOptions}
           {currentUser ? authenticatedOptions : unauthenticatedOptions}
         </div>
-        <SignOut></SignOut>
+        
       </div>
     </nav>
   )

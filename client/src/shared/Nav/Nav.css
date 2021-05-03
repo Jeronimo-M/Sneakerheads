@@ -13,6 +13,7 @@
   padding: 20px 0;
   box-shadow: 1px 1px 1px 0.3px #cecece;
   background: linear-gradient(45deg, #fead06, #c00def);
+  width: 100%
 }
 
 .logo {
@@ -63,7 +64,7 @@
 
 @media screen and (max-width: 800px) {
   .nav {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
   }
