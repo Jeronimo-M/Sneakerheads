@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { getUserPosts, deletePost } from '../../services/posts'
 import { Link } from 'react-router-dom'
+import "./Profile.css"
 
 export default function Profile(props) {
   const [userPosts, setUserPosts] = useState([])
@@ -24,7 +25,7 @@ export default function Profile(props) {
   }
 
   return (
-    <div>
+    <div className="profile">
       {userPosts.map(post => (
         <React.Fragment key={post.id} >
           <div className="post-card"><img className="post-image" src={post.photo_url} alt={post.title} /></div>

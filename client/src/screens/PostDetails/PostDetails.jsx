@@ -32,7 +32,7 @@ export default function PostDetail() {
       e.preventDefault() 
       await postLike(id)
       fetchPost()
-      // history.push(`/posts/${id}`)
+      
     }
       
 
